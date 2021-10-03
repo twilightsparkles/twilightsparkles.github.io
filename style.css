@@ -1,0 +1,116 @@
+body {
+  background-color: #DCDCDC;
+}
+img {
+  width:55%;
+  height: auto;
+  border-radius: 5%;
+  border: 3px solid black;
+}
+iframe {
+  border: 3px solid hotpink;
+}
+div {
+  display: flex;
+}
+
+.makecenter {
+  align-items: center;
+  justify-content: center;
+}
+.directioncenter {
+  flex-direction: row;
+  display: inline-block;
+}
+.colorcol {
+  flex-direction: column;
+  width 45%
+}
+
+.hotpink{
+  background-color: hotpink;
+  font-family: Arial;
+  text-align: bottom;
+  margin:0;
+  padding:0;
+}
+
+.pink {
+  font-family: Courier;
+  background-color: pink;
+  margin:0;
+  padding:0;
+}
+
+.lightpink {
+  font-family: Corsiva;
+  background-color: lightpink;
+  margin:0;
+  padding:0;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 50%;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+text-align: center;
+background-color: black;
+}
+
+a {
+display: inline-block;
+width: 80px;
+background-color: inherit;
+text-align: center;
+text-decoration: none;
+color: white;
+padding: 17px;
+
+}
+
+li a:hover{
+  background-color: orange;
+  background-size: auto;
+}
+li {
+width: 100px;
+margin: auto;
+display: inline;
+}
