@@ -1,0 +1,139 @@
+a {
+  color: hotpink;
+}
+
+button {
+  background-color: white;
+  color: hotpink;
+  border-radius: 4px;
+  border: 2px solid lightpink;
+}
+
+
+.herowindow {
+  width: 100%;
+  height: 350px;
+/*  background-color: pink;*/
+  position: relative;
+
+}
+
+.window {
+  color: white;
+  width: 25%;
+  background-color: rgba(0,0,0,.5);
+  border: 2px solid rgba(180,180,180,.5);
+  padding: 2px;
+  text-align: center;
+  position: absolute;
+  top: 55%;
+  right: 15%;
+}
+.herowindow > img {
+  width: 100%;
+  height: 100%;
+}
+.infobox{
+/*  background-color: lightblue; */
+  width: 100%;
+    padding-bottom: 500px;
+}
+
+.infobox > h1 {
+  width: 33.3%;
+  text-align: center;
+/*  border: 2px solid blue; */
+  margin: 20px auto;
+}
+.box {
+  width: 30%;
+  height: 33.3%;
+  float: left;
+  text-align: center;
+  /* background-color: orange; */
+  margin-left: 2.5%;
+  margin-bottom: 10%;
+ border-bottom: 2px solid slategray;
+ border-left: 2px solid slategray;
+ border-right: 2px solid lightgray;
+}
+
+.box > img {
+  width: 100%;
+  height: 25%;
+}
+
+
+
+
+
+
+
+
+.padding2 {
+  margin-left: 37%;
+}
+.clockbg {
+  /* background-color: purple; */
+  width: 100%;
+  justify-content: center;
+}
+.clock {
+  background-color: pink;
+  width: 33.3%;
+  height: 33.3%;
+  padding: 30px;
+  border-radius: 10%;
+  border: 2px solid red;
+  justify-content: center;
+  position: relative;
+
+}
+
+.clock > img {
+  width: 100%;
+
+}
+
+.handshort {
+
+  width: 25%;
+  top: 43%;
+  left: 50%;
+  position: absolute;
+  transform-origin: left;
+  animation-name: handshort;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.handshort > img {
+  width: 100%;
+}
+
+.handlong {
+
+  width: 32%;
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  transform-origin: left;
+  transform: rotate(-90deg);
+  animation-name: handlong;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.handlong > img {
+  width: 100%;
+}
+
+@keyframes handlong {
+  0% { transform: rotate(-90deg); }
+  100% { transform: rotate(270deg);}
+}
+
+@keyframes handshort {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(27deg);}
+}
