@@ -1,7 +1,14 @@
 body {
-  background-color: lightgreen;
+  background-color: lightyellow;
 }
 
+button {
+  background-color: #303030;
+  color: white;
+  font-size: 0.6em;
+  padding: 8px;
+  margin-top: 15%;
+}
 .ruler {
   width: 80%;
   height: 2px;
@@ -15,27 +22,27 @@ body {
 .header {
   width: 100%;
   height: 200px;
-  background-color: lightblue;
+
   overflow: hidden;
 }
 
 .box1 {
   width: 5%;
   height: 100%;
-  background-color: orange;
+
   float: left;
 }
 
 .logo {
   width: 25%;
   height: 100%;
-  background-color: pink;
+
   float: left;
   position: relative;
 }
 
 @keyframes logo {
-  0% { top: 0%;  left: 0; width: 100%; height: 100%;}
+  0% { top: 0%;  left: 0; width: 90%; height: 90%;}
   100% { top: 40%; left: 30%;  width: 25%; height: 25%;}
 }
 
@@ -43,7 +50,7 @@ body {
   width: 100%;
   height: 100%;
   display: block;
-  box-shadow: 0px 0px 5px green;
+  box-shadow: 0px 0px 5px DarkOliveGreen;
   border-radius: 20%;
   margin-left: auto;
   margin-right: auto;
@@ -75,7 +82,9 @@ body {
   animation-name: titled;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  background-color: pink;
+  color: DarkOliveGreen;
+  font-family: Brush Script MT;
+  font-size: 1.5em;
 }
 
 @keyframes titleu{
@@ -87,7 +96,7 @@ body {
 @keyframes titled{
 
   1% {margin-top: 0%;}
-  100% {margin-top: 50%;}
+  100% {margin-top: 60%;}
 }
 /*@keyframes titleu{
 
@@ -205,12 +214,16 @@ height:100%; */
 
 .messagebox {
   position:absolute;
-  background-color: orange;
+  background-color: gray;
+  width: 27%;
   border: 2px solid lightgray;
-  height: 90px;
+  height: 70px;
   top: 50%;
   left: 10%;
-  padding: 12px;
+  padding: 20px;
+  font-size: 0.8em;
+  font-weight: bold;
+
 
 }
 
@@ -218,7 +231,7 @@ height:100%; */
 .twobyone {
   width: 100%;
   height: 300px;
-  background-color: pink;
+
 
 }
 
@@ -245,14 +258,18 @@ url("../images/intro_img1.jpg");
 
 .imgboxmsg {
   position: absolute;
-  height: 80px;
+  height: 35%;
   width: 60%;
   top: 20%;
-  border: 2px solid green;
+  border: 2px solid yellowgreen;
   left: 10%;
   color: white;
-  padding: 10%;
 
+
+}
+.imgboxmsg > p {
+margin: 10%;
+font-size: 0.7em;
 }
 
 
@@ -261,22 +278,30 @@ url("../images/intro_img1.jpg");
   height: 80%;
   margin: 5%;
   background: rgb(34,193,195);
- background: linear-gradient(0deg, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
+ background: linear-gradient(-135deg, rgba(154, 205, 50, 0.2), rgba(117, 19, 93, 0.2));
  float:left;
- border: 2px solid purple;
+ border: 1px solid purple;
+ color: olivedrab
 }
 
+.imgboxtwo > h4 {
+  margin-left: 10%;
+  margin-bottom: 0px;
+}
 
-
+.imgboxtwo > p {
+  margin: 10%;
+  font-size: 0.8em;
+}
 .threebyone {
   width: 100%;
   height: 500px;
-  background-color: lightblue;
+
 }
 
 .product {
 
-background-color: pink;
+
 height: 90%;
 width: 25%;
 float: left;
@@ -292,19 +317,26 @@ text-align: center;
 }
 
 .footer {
-  background-color: lightblue;
-  width: 90%;
+  background-color: #303030;
+  width: 85%;
   margin-top: 10%;
-  margin-left: 5%;
+  margin-left: 2%;
+    margin-right: 5%;
   text-align: center;
+  color: white;
+     padding-left: 5%;
+     padding-right: 5%;
+     padding-bottom: 5%;
+     padding-top: 3%;
+     font-size: 0.7em;
 }
 
 .footerbox {
-  background-color: pink;
+
   text-align: center;
   width: 20%;
   float: left;
-  margin-left: 4%;
+  margin-left: 3.5%;
 }
 
 .footerbox > hr {
@@ -312,6 +344,7 @@ text-align: center;
    border: none;
    height: 1px;
    width: 80%;
+
 }
 
 .footerbox > p {
@@ -330,12 +363,12 @@ text-align: center;
 
 .socialmediaL {
   width: 100%;
-  background-color: purple;
+
 }
 
 .socialmedia1 {
   width: 38%;
-  background-color: orange;
+
   float: left;
   height: 100px;
 
@@ -344,17 +377,17 @@ text-align: center;
   padding: 5px;
   width: 58.5%;
   height: 100px;
-  background-color: pink;
+
   float: left;
   text-align: right;
 
 }
 
-.socialmedia2 > img {
-  width: 35px;
+
+.socialmediaimg {
+  width: 28px;
   margin-left: 15px;
 }
-
 
 
 /* modal Window */
