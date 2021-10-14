@@ -2,7 +2,7 @@ body {
   background-color: lightyellow;
 }
 
-button {
+.sbutton {
   background-color: #303030;
   color: white;
   font-size: 0.6em;
@@ -10,7 +10,7 @@ button {
   margin-top: 10%;
 }
 
-button:hover {
+.sbutton:hover {
   background-color: lightgray;
   color: black;
 }
@@ -105,66 +105,15 @@ button:hover {
   1% {margin-top: 0%;}
   100% {margin-top: 60%;}
 }
-/*@keyframes titleu{
 
-  1% {margin-top: 0%;}
-  50% {margin-top: -50%; }
-  100% {margin-top: -200%;}
-}
-
-@keyframes titled{
-
-  1% {margin-top: 0%;}
-  50% {margin-top: 50%; }
-  100% {margin-top: 100%;}
-}
-*/
-/*.titlestage {
-  height: 100%;
-  background-color: purple;
-  padding-top: 25px;
-  overflow: hidden;
-}
-
-
-
-.titlegroup {
-  height: 200%;
-  font-family: cursive;
-  animation-name: titles;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-}
-
-.titles {
-text-align: center;
-padding-top: 15px;
-
-width: 50%;
-height: 100%;}
-
-@keyframes titles{
-
-  1% {margin-top: 0px;}
-  50% {margin-top: -100%; }
-  100% {margin-top: -200%;}
-}
-
-.titleh3 {
-  font-family: fantasy;
-  animation-name: titleh3;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-}
-*/
-
-
-.slideshowstage {
+.stage {
   width: 100%;
   height: 50px;
-  background-color: orange;
+  background-color: olivedrab;
   overflow: hidden;
+  font-size: 0.8em;
 }
+
 
 
 .slidegroup{
@@ -178,40 +127,34 @@ height: 100%;}
 text-align: center;
 padding-top: 15px;
 float: left;
-width:33.333%;
+width:  33.33%;
 height: 100%;
 /* width:100%;
 height:100%; */
 }
 
+.darkgreen {
+  background-color: DarkOliveGreen;
+}
+.slide > h4 {
+  display: inline;
+}
+
 @keyframes show {
-1% {margin-left: 0px;}
+10% {margin-left: 0px;}
 50% {margin-left: -100%; }
 100% {margin-left: -200%;}
+
 }
 
 
-.slide:nth-child(1) {
-  background-image: url('mountain.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.slide:nth-child(2) {
-  background-color: purple;
-}
-.slide:nth-child(3) {
-  background-color: orange;
-}
-.slide:nth-child(4) {
-  background-color: pink;
-}
 
 .hero {
   width:100%;
   height: 400px;
   background-color: pink;
   position: relative;
+  overflow: hidden;
 }
 
 .hero > img {
@@ -221,10 +164,10 @@ height:100%; */
 
 .messagebox {
   position:absolute;
-  background-color: gray;
+  background-color: #B0B0B0;
   width: 27%;
   border: 2px solid lightgray;
-  height: 70px;
+  height: auto;
   top: 50%;
   left: 10%;
   padding: 20px;
@@ -297,7 +240,8 @@ font-size: 0.7em;
 }
 
 .imgboxtwo > p {
-  margin: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
   font-size: 0.8em;
 }
 .threebyone {
@@ -330,7 +274,6 @@ text-align: center;
 .footer {
   background-color: #303030;
   width: 85%;
-  margin-top: 10%;
   margin-left: 2%;
     margin-right: 5%;
   text-align: center;
@@ -402,3 +345,130 @@ text-align: center;
 
 
 /* modal Window */
+
+
+.modal{
+top: 0;
+left:0;
+bottom:0;
+right:0;
+background-color: rgba(99, 107, 105,0.5);
+position: fixed;
+opacity: 0;
+pointer-events: none;
+}
+
+
+.modal:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.messageBlock{
+top:30%;
+left:33%;
+width:25%;
+height: 50%;
+border-radius: 5%;
+box-shadow: 7px 10px #333333;
+position: absolute;
+background-color: white;
+overflow: hidden;
+}
+
+
+.row1 {
+  width: 84%;
+  height:5%;
+  float: left;
+  padding-left: 5%;
+}
+
+.row12 {
+  width: 9%;
+  height: 9%;
+  padding-top: 8px;
+  padding-right: 2%;
+  float: left;
+  background-color: lightgray;
+  text-align: center;
+
+}
+.row1 > p {
+  margin-bottom: 5px;
+  padding:  0px;
+}
+.row12 > a {
+  text-decoration: none;
+  color: black;
+}
+
+.sm-break {
+  height: 1px;
+  background-color: lightgray;
+  width: 100%;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+.sm-break2 {
+  height: 1px;
+  background-color: white;
+  width: 80%;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.row2 {
+top: 18%;
+height: 50%;
+width: 40%;
+padding-left: 5%;
+/*background-color: pink; */
+position: absolute;
+}
+
+.row2 > img {
+ width: 90%;
+ height: 90%;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.row22 {
+/*  background-color: lightgreen;*/
+  width: 45%;
+  height: 50%;
+  position: absolute;
+  padding-right: 5%;
+  padding-left: 5%;
+  top: 18%;
+  left: 43%;
+  font-size: .63em;
+}
+
+.row22 > h5 {
+  font-size: .6em;
+}
+
+.row22 > p {
+  font-size: .5em;
+  margin-top: 10%;
+}
+
+.row3 {
+  height: 14%;
+  width: 95%;
+  background: lightgray;
+  position: absolute;
+  top: 67%;
+  padding: 5%;
+  font-size: .5em;
+}
+
+.row3 > button {
+  font-size: 1.2em;
+}
