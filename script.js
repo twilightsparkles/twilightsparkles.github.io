@@ -10,9 +10,10 @@
 
 let cBMI = jBMI > lBMI
 
-// TEMPERATURE
-
 console.log(`The BMI of John is ${jBMI}.  The BMI of Lucas is ${lBMI}. It is ${cBMI} that John's BMI is higher than Lucas'.`)
+
+
+// TEMPERATURE
 
 const temp = prompt(`Enter Current Temperature`)
 const tempvar = prompt(`Did you enter (C)elcius or (F)arignheight?`)
